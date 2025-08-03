@@ -8,7 +8,6 @@ import os
 import logging
 from dotenv import load_dotenv
 
-GEMINI_API_KEY="AIzaSyAGMMGFQo35VDA_1mgGsDYnm6ssda0Vu8w"
 
 
 # Configure logging
@@ -80,4 +79,5 @@ if __name__ == "__main__":
     try:
         generate_reports()
     except Exception as e:
+
         logger.error(f"Fatal error in generate_reports: {e}")
