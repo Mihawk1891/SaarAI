@@ -1,6 +1,4 @@
-Here's the enhanced README.md in its complete, ready-to-use format. Simply copy and paste this into your file:
 
-```markdown:d:/SaarAI/README.md
 # 🚀 SaarAI – Automated Student Insight & Report Generator
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/)
