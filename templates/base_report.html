@@ -1,0 +1,50 @@
+<div class="report">
+  <h1>📝 Scoreazy Learning Report</h1>
+  {% if trend_highlight %}
+    <div class="highlight">{{ trend_highlight }}</div>
+  {% endif %}
+  
+  {% if strengths %}
+    <h2>🌟 Top Strengths</h2>
+    <ul>
+      {% for strength in strengths %}
+        <li>{{ strength.subject|default:'' }}: {{ strength.evidence|default:'' }}</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+  
+  {% if improvements %}
+    <h2>📈 Progress Highlights</h2>
+    <ul>
+      {% for improvement in improvements %}
+        <li>{{ improvement.subject|default:'' }}: {{ improvement.trend|default:'0' }}% improvement</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+  
+  {% if risks %}
+    <h2>⚠️ Attention Areas</h2>
+    <ul>
+      {% for risk in risks %}
+        <li>{{ risk.subject|default:'' }}: {{ risk.drop|default:'0' }}% drop detected</li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+  
+  {% if vark_type %}
+    <h2>🧠 Learning Style: {{ vark_type }}</h2>
+    {% if study_tips %}
+      <ul>
+        {% for tip in study_tips %}
+          <li>{{ tip|default:'' }}</li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  {% endif %}
+  
+  {% if teacher_quote %}
+    <div class="teacher-note">
+      "{{ teacher_quote }}"
+    </div>
+  {% endif %}
+</div>

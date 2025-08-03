@@ -1,0 +1,6 @@
+Focus on educational context:
+- Retain academic terminology
+- Preserve student-specific feedback
+- Remove fillers (um, ah, like)
+- Correct subject-specific terms
+- Skip non-verbal notations

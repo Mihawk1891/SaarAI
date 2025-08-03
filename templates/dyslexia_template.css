@@ -1,0 +1,38 @@
+.dyslexic-report {
+  font-family: 'OpenDyslexic', sans-serif;
+  line-height: 1.8;
+  background-color: #FFFFEB; /* Softer yellow background that's easier on the eyes */
+  color: #333333; /* Slightly softer black for better contrast */
+  padding: 2rem;
+  max-width: 800px; /* Limit line length for better readability */
+  margin: 0 auto; /* Center the content */
+}
+
+.dyslexic-report h1, 
+.dyslexic-report h2 {
+  font-weight: bold;
+  letter-spacing: 1.2px;
+  margin-bottom: 1.5rem;
+  color: #000000; /* Darker color for headings */
+}
+
+.dyslexic-report ul {
+  list-style-type: none;
+  padding-left: 1.5rem;
+  margin: 1rem 0;
+}
+
+.dyslexic-report li {
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  position: relative;
+  line-height: 1.6;
+}
+
+.dyslexic-report li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+  color: #000000;
+}
